@@ -11,9 +11,9 @@ min(2^32 - 1, size(png_file) / 8)
 
 One bit of the hidden message is encoded for every byte per pixel of the png file.
 
-## Usage:
+# Usage:
 
-#### Encoding:
+## Encoding:
 
 To encode a message using a base `image.png` into `encoded.png`,
 you can pipe the message to stdin
@@ -28,7 +28,7 @@ cargo run -- -e image.png encoded.png file-to-encode.bin
 ```
 It doesn't matter what format the data is in.
 
-#### Decoding:
+## Decoding:
 
 To decode a message, you can pipe the decoded message to stdout
 
